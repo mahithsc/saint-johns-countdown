@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
   const endDate = new Date()
 
-  const finalDayOfSchool = new Date('May 6, 2022 020:18:00').getTime()
+  const finalDayOfSchool = new Date('May 6, 2022 014:18:00').getTime()
 
   const addAZeroWhenNeeded = (number: number) => {
     if (number.toString().length === 1) {
@@ -53,12 +53,33 @@ const Home: NextPage = () => {
         {/* <div className='text-white spacing tracking-[1em] text-3xl font-bold flex'>COUNTDOWN</div> */}
         <div className='flex-1 bg-slate-500 flex justify-center items-center flex-col'>
           <div className='text-white spacing tracking-[0.75em] text-3xl font-bold flex'>COUNTDOWN</div>
-          <div>
-            {`${days} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`}
+          
+          <div className='flex space-x-8'>
+            <div className='flex flex-col items-center'>
+              <div>{days}</div>
+              <div>days</div>
+            </div>
+            <div className='flex flex-col items-center'>
+              <div>{hours}</div>
+              <div>hours</div>
+            </div>
+            <div className='flex flex-col items-center'>
+              <div>{minutes}</div>
+              <div>minutes</div>
+            </div>
+            <div className='flex flex-col items-center'>
+              <div>{seconds}</div>
+              <div>seconds</div>
+            </div>
           </div>
+          
+          
+          {/* <div className='text-white text-3xl'>
+            {`${days} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`}
+          </div> */}
         </div>
-        <div className='flex-1 bg-red-500'>
-        </div>
+        {/* <div className='flex-1 bg-red-500'>
+        </div> */}
 
       </div>
     </>
