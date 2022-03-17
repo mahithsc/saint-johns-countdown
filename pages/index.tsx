@@ -48,12 +48,19 @@ const Home: NextPage = () => {
       <Head>
         <title>Saing Johns Class of 22 Countdown</title>
       </Head>
+      
+      
+      {/* Parent Widget */}
       <div className='flex h-screen'>
-        {/* <div className='flex'></div> */}
-        {/* <div className='text-white spacing tracking-[1em] text-3xl font-bold flex'>COUNTDOWN</div> */}
+
+        {/* container for the grey box */}
         <div className='flex-1 bg-slate-500 flex justify-center items-center flex-col'>
-          <div className='text-white spacing tracking-[0.75em] text-3xl font-bold flex'>COUNTDOWN</div>
           
+          {/* The two title */}
+          <div className='text-white spacing tracking-[0.5em] text-3xl font-bold flex'>COUNTDOWN</div>
+          <div className='text-white spacing tracking-[0.5em] text-3xl font-bold flex'>SJ CLASS OF '22</div>
+
+          {/*this is the component which displays all the times*/}
           <div className='flex space-x-8'>
             <div className='flex flex-col items-center'>
               <div>{days}</div>
@@ -72,14 +79,12 @@ const Home: NextPage = () => {
               <div>seconds</div>
             </div>
           </div>
-          
-          
-          {/* <div className='text-white text-3xl'>
-            {`${days} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`}
-          </div> */}
         </div>
-        {/* <div className='flex-1 bg-red-500'>
-        </div> */}
+
+
+
+        <div className='flex-1 bg-red-500'>
+        </div>
 
       </div>
     </>
