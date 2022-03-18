@@ -3,6 +3,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import TimeWidget from '../components/TimeWidget'
+import Title from '../components/Title'
 
 const Home: NextPage = () => {
   const [days, setDays]: any = useState("00")
@@ -48,37 +50,20 @@ const Home: NextPage = () => {
       <Head>
         <title>Saing Johns Class of 22 Countdown</title>
       </Head>
-      
-      
+
+
       {/* Parent Widget */}
       <div className='flex h-screen'>
 
         {/* container for the grey box */}
         <div className='flex-1 bg-slate-500 flex justify-center items-center flex-col'>
-          
+
           {/* The two title */}
-          <div className='text-white spacing tracking-[0.5em] text-3xl font-bold flex'>COUNTDOWN</div>
-          <div className='text-white spacing tracking-[0.5em] text-3xl font-bold flex'>SJ CLASS OF '22</div>
+          <Title/>
 
           {/*this is the component which displays all the times*/}
-          <div className='flex space-x-8'>
-            <div className='flex flex-col items-center'>
-              <div>{days}</div>
-              <div>days</div>
-            </div>
-            <div className='flex flex-col items-center'>
-              <div>{hours}</div>
-              <div>hours</div>
-            </div>
-            <div className='flex flex-col items-center'>
-              <div>{minutes}</div>
-              <div>minutes</div>
-            </div>
-            <div className='flex flex-col items-center'>
-              <div>{seconds}</div>
-              <div>seconds</div>
-            </div>
-          </div>
+          <TimeWidget days={days} hours={hours} minutes={minutes} seconds={seconds} />
+
         </div>
 
 
@@ -90,6 +75,8 @@ const Home: NextPage = () => {
     </>
   )
 }
+
+
 
 export default Home
 
