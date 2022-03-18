@@ -7,6 +7,8 @@ import TimeWidget from '../components/TimeWidget'
 import Title from '../components/Title'
 
 const Home: NextPage = () => {
+
+  //useState Hook
   const [days, setDays]: any = useState("00")
   const [hours, setHours]: any = useState("00")
   const [minutes, setMinutes]: any = useState("00")
@@ -53,13 +55,13 @@ const Home: NextPage = () => {
 
 
       {/* Parent Widget */}
-      <div className='flex h-screen'>
+      <div className='flex h-screen bg-black'>
 
         {/* container for the grey box */}
-        <div className='flex-1 bg-slate-500 flex justify-center items-center flex-col'>
+        <div className='flex-1 bg-black flex justify-center items-center flex-col '>
 
           {/* The two title */}
-          <Title/>
+          <Title />
 
           {/*this is the component which displays all the times*/}
           <TimeWidget days={days} hours={hours} minutes={minutes} seconds={seconds} />
@@ -67,8 +69,20 @@ const Home: NextPage = () => {
         </div>
 
 
+        <div className='flex-1 bg-black'>
 
-        <div className='flex-1 bg-red-500'>
+          <video autoPlay loop muted width={'320'}>
+            <source src='/7pq2rT-LHmt-OQzi.mp4' type='video/mp4' />
+          </video>
+          <div className='flex'>
+            <video autoPlay loop muted width={'320'}>
+              <source src='/3Pcu2tR-aoTJalmY.mp4' type='video/mp4' />
+            </video>
+            <video autoPlay loop muted width={'320'}>
+            <source src='/JaIqAAHhgl9gkP3K.mp4' type='video/mp4' />
+          </video>
+          </div>
+
         </div>
 
       </div>
