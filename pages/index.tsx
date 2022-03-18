@@ -50,7 +50,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Saing Johns Class of 22 Countdown</title>
+        <title>Saint Johns Class of 22 Countdown</title>
+
       </Head>
 
 
