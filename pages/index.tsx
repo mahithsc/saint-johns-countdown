@@ -59,7 +59,7 @@ const Home: NextPage = () => {
         {/* container for the grey box */}
         <div className='flex-1 flex justify-center items-center flex-col'>
           {/* The two title */}
-          <div className='fixed top-28 flex flex-col items-center'>
+          <div className='fixed top-1/2 flex flex-col items-center'>
             <Title />
             {/*this is the component which displays all the times*/}
             <div className='h-10'></div>
@@ -67,8 +67,7 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-
-        <div className='flex-1'>
+        <div className='flex-1 invisible xl:visible'>
           <div>
             {/* video with the basketball team */}
             <video autoPlay loop muted width={'320'} className='w-full'>
@@ -89,8 +88,9 @@ const Home: NextPage = () => {
               <source src='/asbjRrS4i3lhgUoT.mp4' type='video/mp4' />
             </video>
 
+            <img src="/FCp6buAXIAA9JtA.jpeg" />
+
             <div className='flex'>
-              
               <video autoPlay loop muted width={'320'} className='flex-1'>
                 <source src='/JaIqAAHhgl9gkP3K.mp4' type='video/mp4' />
               </video>
