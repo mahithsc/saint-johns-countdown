@@ -109,7 +109,6 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className='bg-black h-screen'></div>
-        <div className='fixed bottom-0 '>hello world</div>
       </div>
     </>
   )
