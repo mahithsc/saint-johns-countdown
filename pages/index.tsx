@@ -55,36 +55,60 @@ const Home: NextPage = () => {
 
 
       {/* Parent Widget */}
-      <div className='flex h-screen bg-black'>
-
+      <div className='flex bg-black bg-auto'>
         {/* container for the grey box */}
-        <div className='flex-1 bg-black flex justify-center items-center flex-col '>
-
+        <div className='flex-1 flex justify-center items-center flex-col'>
           {/* The two title */}
-          <Title />
-
-          {/*this is the component which displays all the times*/}
-          <TimeWidget days={days} hours={hours} minutes={minutes} seconds={seconds} />
-
+          <div className='fixed top-28'>
+            <Title />
+            {/*this is the component which displays all the times*/}
+            <TimeWidget days={days} hours={hours} minutes={minutes} seconds={seconds} />
+          </div>
         </div>
 
 
-        <div className='flex-1 bg-black'>
+        <div className='flex-1'>
+          <div>
+            {/* video with the basketball team */}
+            <video autoPlay loop muted width={'320'} className='w-full'>
+              <source src='/7pq2rT-LHmt-OQzi.mp4' type='video/mp4' />
+            </video>
 
-          <video autoPlay loop muted width={'320'}>
-            <source src='/7pq2rT-LHmt-OQzi.mp4' type='video/mp4' />
-          </video>
-          <div className='flex'>
+            {/* sully sensei */}
+            <div className='flex'>
+              <video autoPlay loop muted width={'320'} className='flex-1' >
+                <source src='/3Pcu2tR-aoTJalmY.mp4' type='video/mp4' />
+              </video>
+              <video autoPlay loop muted width={'320'} className='flex-1' >
+                <source src='/A2c6qaxjL7hQchzo.mp4' type='video/mp4' />
+              </video>
+            </div>
+
+            <video autoPlay loop muted width={'320'} className='w-full'>
+              <source src='/asbjRrS4i3lhgUoT.mp4' type='video/mp4' />
+            </video>
+
+            <div className='flex'>
+              
+              <video autoPlay loop muted width={'320'} className='flex-1'>
+                <source src='/JaIqAAHhgl9gkP3K.mp4' type='video/mp4' />
+              </video>
+            </div>
+
+
+            {/* <video autoPlay loop muted width={'320'} className = 'col-span-2'>
+              <source src='/7pq2rT-LHmt-OQzi.mp4' type='video/mp4' />
+            </video>
             <video autoPlay loop muted width={'320'}>
               <source src='/3Pcu2tR-aoTJalmY.mp4' type='video/mp4' />
             </video>
             <video autoPlay loop muted width={'320'}>
-            <source src='/JaIqAAHhgl9gkP3K.mp4' type='video/mp4' />
-          </video>
+              <source src='/JaIqAAHhgl9gkP3K.mp4' type='video/mp4' />
+            </video> */}
           </div>
-
         </div>
-
+        <div className='bg-black h-screen'></div>
+        <div className='fixed bottom-0 '>hello world</div>
       </div>
     </>
   )
