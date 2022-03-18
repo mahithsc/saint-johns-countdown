@@ -59,9 +59,10 @@ const Home: NextPage = () => {
         {/* container for the grey box */}
         <div className='flex-1 flex justify-center items-center flex-col'>
           {/* The two title */}
-          <div className='fixed top-28'>
+          <div className='fixed top-28 flex flex-col items-center'>
             <Title />
             {/*this is the component which displays all the times*/}
+            <div className='h-10'></div>
             <TimeWidget days={days} hours={hours} minutes={minutes} seconds={seconds} />
           </div>
         </div>
