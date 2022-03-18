@@ -68,7 +68,7 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className='flex-1 invisible xl:visible'>
+        <div className='flex-1 hidden xl:block'>
           <div>
             {/* video with the basketball team */}
             <video autoPlay loop muted width={'320'} className='w-full'>
@@ -96,17 +96,6 @@ const Home: NextPage = () => {
                 <source src='/JaIqAAHhgl9gkP3K.mp4' type='video/mp4' />
               </video>
             </div>
-
-
-            {/* <video autoPlay loop muted width={'320'} className = 'col-span-2'>
-              <source src='/7pq2rT-LHmt-OQzi.mp4' type='video/mp4' />
-            </video>
-            <video autoPlay loop muted width={'320'}>
-              <source src='/3Pcu2tR-aoTJalmY.mp4' type='video/mp4' />
-            </video>
-            <video autoPlay loop muted width={'320'}>
-              <source src='/JaIqAAHhgl9gkP3K.mp4' type='video/mp4' />
-            </video> */}
           </div>
         </div>
         <div className='bg-black h-screen'></div>
