@@ -68,6 +68,7 @@ const Home: NextPage = () => {
           </div>
         </div>
 
+        {/* video */}
         <div className='flex-1 hidden xl:block'>
           <div>
             {/* video with the basketball team */}
