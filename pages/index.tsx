@@ -48,10 +48,9 @@ const Home: NextPage = () => {
 
 
   return (
-    <>
+    <div>
       <Head>
         <title>Saint Johns Class of 22 Countdown</title>
-
       </Head>
 
 
@@ -65,6 +64,8 @@ const Home: NextPage = () => {
             {/*this is the component which displays all the times*/}
             <div className='h-10'></div>
             <TimeWidget days={days} hours={hours} minutes={minutes} seconds={seconds} />
+
+            <div className='text-white'>Days of School Left: </div>
           </div>
         </div>
 
@@ -101,7 +102,7 @@ const Home: NextPage = () => {
         </div>
         <div className='bg-black h-screen'></div>
       </div>
-    </>
+    </div>
   )
 }
 
