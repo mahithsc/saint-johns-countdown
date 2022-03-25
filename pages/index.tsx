@@ -44,16 +44,11 @@ const Home: NextPage = () => {
     }, 1000)
   }, [])
 
-  //functions
-
-
   return (
     <div>
       <Head>
         <title>Saint Johns Class of 22 Countdown</title>
       </Head>
-
-
       {/* Parent Widget */}
       <div className='flex bg-black bg-auto'>
         {/* container for the grey box */}
