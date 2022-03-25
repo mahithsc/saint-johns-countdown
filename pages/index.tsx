@@ -9,6 +9,8 @@ import { daysOfSchool } from '../components/daysOfSchool'
 
 const Home: NextPage = () => {
 
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
   //useState Hook
   const [days, setDays]: any = useState("00")
   const [hours, setHours]: any = useState("00")
@@ -16,8 +18,9 @@ const Home: NextPage = () => {
   const [seconds, setSeconds]: any = useState("00")
   const [daysOfSchool, setDaysOfSchool]: any = useState()
 
-  const endDate = new Date()
-
+  //initializing dates
+  // const endDate = new Date();
+  const d = new Date();
   const finalDayOfSchool = new Date('May 6, 2022 014:18:00').getTime()
 
   const addAZeroWhenNeeded = (number: number) => {
@@ -40,8 +43,11 @@ const Home: NextPage = () => {
     setSeconds(addAZeroWhenNeeded(seconds))
   }
 
-  const getDtae = () => {
-
+  const getDate = () => {
+    let month = months[d.getMonth()];
+    let day = d.getDate();
+    let date = `${month} ${day}`
+    
   }
 
   //used to update the time every one second
