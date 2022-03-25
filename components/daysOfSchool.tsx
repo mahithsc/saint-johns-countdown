@@ -1,4 +1,4 @@
-export const days:any = {
+export const daysOfSchool:any = {
     'March 25': 18,
     'March 26': 18,
     'March 27': 18,

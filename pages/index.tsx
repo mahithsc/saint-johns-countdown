@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import TimeWidget from '../components/TimeWidget'
 import Title from '../components/Title'
+import { daysOfSchool } from '../components/daysOfSchool'
 
 const Home: NextPage = () => {
 
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
   const [hours, setHours]: any = useState("00")
   const [minutes, setMinutes]: any = useState("00")
   const [seconds, setSeconds]: any = useState("00")
+  const [daysOfSchool, setDaysOfSchool]: any = useState()
 
   const endDate = new Date()
 
@@ -38,10 +40,20 @@ const Home: NextPage = () => {
     setSeconds(addAZeroWhenNeeded(seconds))
   }
 
+  const getDtae = () => {
+
+  }
+
+  //used to update the time every one second
   useEffect(() => {
     setInterval(() => {
       setDate()
     }, 1000)
+  }, [])
+
+  //used to get the number of days left in school
+  useEffect(() => {
+
   }, [])
 
   return (
