@@ -78,7 +78,7 @@ const Home: NextPage = () => {
             <div className='h-10'></div>
             <TimeWidget days={days} hours={hours} minutes={minutes} seconds={seconds} />
 
-            <div className='text-white'>Days of School Left: </div>
+            {/* <div className='text-white'>Days of School Left: </div> */}
           </div>
         </div>
 
